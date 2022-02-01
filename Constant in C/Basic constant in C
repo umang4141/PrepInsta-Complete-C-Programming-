@@ -1,0 +1,9 @@
+#include<stdio.h>
+#define LENGTH 10
+int main()
+{
+const int BREADTH=10;
+int AREA;
+AREA=LENGTH*BREADTH;
+printf("%d",AREA);
+}
