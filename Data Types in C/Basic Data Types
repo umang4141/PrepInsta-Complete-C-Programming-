@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int a = -123456; 
+    unsigned int b = 123456; 
+
+    short c = -123; 
+    unsigned short d = 123; 
+
+    long e = -1234567890;
+    unsigned long f = 1234567890; 
+
+    long long g = -1234567890123; 
+    unsigned long long h = 1234567890123;e integers
+
+    char i = 'Z'; /
+    char j[] = "PrepInsta";
+
+    
+    float k = 1.0001;
+    double l = 123456.0000000001; 
+    long double m = 1234567890.00000000000001; 
+
+    printf("%d\n",a);
+    printf("%i\n",b);
+
+    printf("%hi\n",c);
+    printf("%hu\n",d);
+
+    printf("%li\n",e);
+    printf("%lu\n",f);
+
+    printf("%lli\n",g);
+    printf("%llu\n",h);
+
+    printf("%c\n",i);
+    printf("%s\n",j);
+
+    printf("%f\n",k);
+    printf("%lf\n",l);
+    printf("%Lf\n",m);
+
+    return 0;
+}
