@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h>
+int Freq_Ele(int n,int arr[10])
+{
+    int i,j;
+    int count=0,count_1=0;
+    for(i=1;i<=n;i++)
+    {
+        if(arr[i]%2 == 0)
+        {
+            count++;
+        }
+        else
+        {
+            count_1++;
+
+        }
+
+    }
+    printf("Number of Even Elements:%d\n",count);
+    printf("Number of Odd Elements:%d ",count_1);
+}
+int main()
+{
+    int n,i;
+    int arr[10];
+    printf("Enter the Number of Element:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    Freq_Ele(n,arr);
+}
