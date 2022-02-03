@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<string.h>
+int Freq_Ele(int n,int m,int arr[10],int arr_1[20])
+{
+    int i,j;
+    int k=1;
+    int arr_f[13];
+    int count=0,count_1=0;
+    for(j=1;j<=m;j++)
+    {
+          for(i=1;i<=n;i++)
+          {
+              if(arr[i]==arr_1[j])
+              {
+                  arr_f[k] = arr[i];
+                  k++;
+              }
+
+          }
+    }
+    for(k=1;k<=n;k++)
+    {
+          printf("%d ",arr_f[k]);
+    }
+}
+int main()
+{
+    int n,i,j,m;
+    int arr[20],arr_1[10];
+    printf("Enter the Number of Element of First Array:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Enter the Number of Element of Secod Array:");
+    scanf("%d",&m);
+    for(j=1;j<=m;j++)
+    {
+        scanf("%d",&arr_1[j]);
+    }
+
+    Freq_Ele(n,m,arr,arr_1);
+}
+
