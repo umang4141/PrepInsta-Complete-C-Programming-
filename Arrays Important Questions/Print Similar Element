@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<string.h>
+int Repeat_Ele(int n,int arr[10])
+{
+        int i,j;
+        int count=0,count_1=0;
+     for(i=1;i<=n;i++)
+     {
+
+             for(j=i+1;j<=n;j++)
+             {
+
+                 if(arr[j] == arr[i])
+                 {
+                     count++;
+
+
+                 }
+
+             }
+                   if(count >0){
+                    printf("%d ",arr[i]);
+
+                   }
+                   count =0;
+     }
+
+}
+
+int main()
+{
+
+    int arr[10];
+    int n,i;
+    printf("Enter the Number of Element;\n");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+    scanf("%d",&arr[i]);
+    }
+    Repeat_Ele(n,arr);
+}
+
+
