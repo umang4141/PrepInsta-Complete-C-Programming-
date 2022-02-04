@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+void show(char str[100])
+{ int i,count=0;
+while(str[i]!='\0')
+     {
+
+        printf("%c\n",str[i]);
+
+              i++;
+              count++;
+    }
+printf("\n%d",count);
+
+}
+int main()
+{
+    char str[100];
+    int i=0,count=0;
+    gets(str);
+    int len = strlen(str);
+    show(str);
+
+
+}
