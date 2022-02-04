@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+void show(char str[100])
+{
+int i,sum=0;
+while(str[i]!='\0')
+     {
+
+        if((str[i]>='0') && (str[i]<='9'))
+        {
+            sum = sum +(str[i]-'0');
+
+
+        }
+        i++;
+}
+printf("%d",sum);
+
+}
+int main()
+{
+    char str[100];
+    int i=0,count=0;
+    gets(str);
+    int len = strlen(str);
+    show(str);
+
+
+}
